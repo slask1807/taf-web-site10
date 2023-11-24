@@ -8,7 +8,7 @@ public class KvitkiTest {
     @Test
     public void checkEmptyValue() throws InterruptedException {
         WebDriver driver = new ChromeDriver();
-        driver.manage().window().maximize();
+          driver.manage().window().maximize();
         driver.navigate().to("https://www.kvitki.by/");
         KvitkiPage kvitkiPage = new KvitkiPage(driver);
         kvitkiPage.clickButtonAcsessCookie();
