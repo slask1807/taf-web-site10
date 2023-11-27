@@ -6,14 +6,14 @@ import org.openqa.selenium.WebDriver;
 public class KvitkiPage {
     private String buttonAcsessCookie = "//*[@id=\"CybotCookiebotDialogBodyLevelButtonLevelOptinAllowAll\"]";
     private String bunnerCloseLocator = "/html/body/div[7]/div";
-    private String buttonSubmitAccountLocator = "/html/body/div[3]/div[2]/div/app-user-account-link/app-profile-link";
-    private String textEnterLocator = "//*[@id=\"mat-tab-label-0-0\"]/span[2]/span[1]";
-    private String inputTextEmailLocator = "/html/body/div[9]/div[2]/div/mat-dialog-container/div/div/app-user-auth-form/div[2]/mat-tab-group/div/mat-tab-body[1]/div/app-user-login-form/app-collapsible/div/app-form-builder/form/app-collapsible[1]/app-email-input/div/input";
+    private String buttonSubmitAccountLocator = "//*[@class= 'user-account-text-hover']";
+    private String textEnterLocator = "//*[contains(text(),\"Вход\") and @class='mdc-tab__text-label']";
+    private String inputTextEmailLocator = "//*[@type='email' and @name='email']";
     private String inputTextPasswordLocator = "//*[@id=\"3w998ouvqkk-password\"]";
-    private String clickfieldEmailLocator = "//*[@id=\"mat-tab-content-0-0\"]/div/app-user-login-form/app-collapsible/div/app-form-builder/form/app-collapsible[1]/app-email-input/div";
-    private String clickfieldPasswordLocator = "//*[@id=\"mat-tab-content-0-0\"]/div/app-user-login-form/app-collapsible/div/app-form-builder/form/app-collapsible[2]/app-password-input/div";
-    private String messegeEmtyEmailLocator = "//*[@id=\"mat-tab-content-0-0\"]/div/app-user-login-form/app-collapsible/div/app-form-builder/form/app-collapsible[1]/app-email-input/app-field-error/app-collapsible";
-    private String messegeEmtyPasswordLocator = "//*[@id=\"mat-tab-content-0-0\"]/div/app-user-login-form/app-collapsible/div/app-form-builder/form/app-collapsible[2]/app-password-input/app-field-error/app-collapsible";
+    private String clickfieldEmailLocator = "//*[@class='input-component ng-pristine ng-invalid input-error ng-touched']";
+    private String clickfieldPasswordLocator = "//*[@class='input-component input-with-icon ng-pristine ng-invalid input-error ng-touched']";
+    private String messegeEmtyEmailLocator = "//*[@class='form-field-error ng-tns-c7-18 ng-tns-c6-19 ng-trigger ng-trigger-slideInOut ng-star-inserted']";
+    private String messegeEmtyPasswordLocator = "//*[@class='form-field-error ng-tns-c7-20 ng-tns-c6-21 ng-trigger ng-trigger-slideInOut ng-star-inserted']";
     private String errorMessegeWrongEmailLocator = "//*[@id=\"mat-tab-content-0-0\"]/div/app-user-login-form/app-collapsible/div/app-form-builder/form/app-collapsible[1]/app-email-input/app-field-error";
 
     private WebDriver driver;

@@ -1,4 +1,4 @@
 package by.itacademy.shlesin;
 
-public class kkl {
+public class PizzatempoPage {
 }

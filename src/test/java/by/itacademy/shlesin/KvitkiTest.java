@@ -1,18 +1,14 @@
 package by.itacademy.shlesin;
+
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
-import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.chrome.ChromeDriver;
 
-public class KvitkiTest {
+public class KvitkiTest extends BaseTest {
+
     @Test
     public void checkEmptyValue() throws InterruptedException {
-        WebDriver driver = new ChromeDriver();
-          driver.manage().window().maximize();
-        driver.navigate().to("https://www.kvitki.by/");
         KvitkiPage kvitkiPage = new KvitkiPage(driver);
-        kvitkiPage.clickButtonAcsessCookie();
-        kvitkiPage.bunnerCloseLocator();
+               //kvitkiPage.bunnerCloseLocator();
         kvitkiPage.clickbuttonSubmitAccount();
         Assertions.assertEquals("Вход", kvitkiPage.getTextEnter());
         kvitkiPage.clickFieldEmail();
@@ -24,9 +20,6 @@ public class KvitkiTest {
 
     @Test
     public void checkFieldEmail() throws InterruptedException {
-        WebDriver driver = new ChromeDriver();
-        driver.manage().window().maximize();
-        driver.navigate().to("https://www.kvitki.by/");
         KvitkiPage kvitkiPage = new KvitkiPage(driver);
         kvitkiPage.clickButtonAcsessCookie();
         kvitkiPage.bunnerCloseLocator();
@@ -36,5 +29,5 @@ public class KvitkiTest {
         kvitkiPage.clickFieldPassword();
         Assertions.assertEquals("Пожалуйста, введите адрес электронной почты в правильном формате: name@example.com", kvitkiPage.getErrorMessegeWrongEmail());
     }
-}
+ }
 
