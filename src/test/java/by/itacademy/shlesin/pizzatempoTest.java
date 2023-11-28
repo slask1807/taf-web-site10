@@ -7,7 +7,6 @@ public class pizzatempoTest extends BaseTestPizzatempo {
 
     @Test
     public void checkBasket() throws InterruptedException {
-        driver.navigate().to("https://www.pizzatempo.by/");
         PizzatempoPage pizzatempoPage = new PizzatempoPage(driver);
         pizzatempoPage.clickbuttonPizza();
         pizzatempoPage.clickEnterMargarita();
