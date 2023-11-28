@@ -7,7 +7,9 @@ public class KvitkiTest extends BaseTest {
 
     @Test
     public void checkEmptyValue() throws InterruptedException {
+        driver.navigate().to("https://www.kvitki.by/");
         KvitkiPage kvitkiPage = new KvitkiPage(driver);
+        kvitkiPage.clickButtonAcsessCookie();
                //kvitkiPage.bunnerCloseLocator();
         kvitkiPage.clickbuttonSubmitAccount();
         Assertions.assertEquals("Вход", kvitkiPage.getTextEnter());
