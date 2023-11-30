@@ -39,7 +39,7 @@ public class PizzatempoPage {
         driver.findElement(By.xpath(buttonBasket)).click();
     }
 
-    public String checkNamePizzaInBasket() {
+    public String getTextPizzaInBasket() {
         return driver.findElement(By.xpath(namePizzaInBasket)).getText();
     }
 }
